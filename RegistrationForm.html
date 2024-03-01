@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Avinash Baratam">
+    <meta name="description" content="It is a  Course registration form">
+    <title>Course Registration Form</title>
+    <style>
+        html{
+            font-size: 22;
+        }
+        body{
+            background-color: #333;
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Course Registration Form</h1>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="fname">First Name : </label>
+        <input type="text" id="fname" name="firstName" autofocus required><br><br>
+        <label for="mname">Middle Name : </label>
+        <input type="text" id="mname" name="middleName"><br><br>
+        <label for="lname">Last Name : </label>
+        <input type="text" id="lname" name="lastName" required><br>
+        <p>
+            Gender :
+            <select name="gender" id="gender">
+                <option value="select" selected>-select-</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+        <p>
+            Course:
+            <select name="course" id="course">
+                <option value="select">-select-</option>
+                <option value="java">JAVA</option>
+                <option value="c">C</option>
+                <option value="python">PYTHON</option>
+                <option value="c++">C++</option>
+                <option value="sql">SQL</option>
+                <option value="rLanguage">R LANGUAGE</option>
+                <option value="fullstack">FULL STACK</option>
+            </select>
+        </p>
+        <p>
+            Phone:
+            <input type="text" name="countrycode" value="+91" size="3">
+            <input type="text" name="phone" size="10"><br><br>
+        </p>
+        <p>
+            <label for="add">Address : </label><br>
+            <textarea name="address" id="add" cols="50" rows="5" placeholder="Type your address here...."></textarea>
+        </p>
+        <p>
+            <label for="email">E-mail : </label>
+            <input type="email" id="email" name="email" placeholder="john@gmail.com">
+        </p>
+        <p>
+            <label for="pswd">Password : </label>
+            <input type="password" id="pswd" name="password" required>
+        </p>
+        <p>
+            <label for="repswd">Re-type password : </label>
+            <input type="password" id="repswd" name="repassword" required>
+        </p>
+        <p>
+            <label for="dob">Date of Birth(dd/mm/yyyy) :</label>
+            <input type="date" id="dob" name="dob">
+        </p>
+        <p>
+            <label for="image">Upload your image :</label>
+            <input type="file" id="image" name="candidateImage">
+        </p>
+        <p>
+            <button value="submit" onclick="alert('No database available....!!!')">Submit</button>
+        </p>
+    </form>
+</body>
+</html>

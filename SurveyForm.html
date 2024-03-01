@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-color: #333;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://httpbin.org/get">
+        <fieldset>
+            <legend><h1>Survey Form</h1></legend>
+            <p>
+                <label for="name">Name  </label>
+                <input type="text" id="name" name="FullName" placeholder="Enter your Name" autofocus required><br><br>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="Enter your Email"><br><br>
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="text" id="age" name="Age" placeholder="Enter your Age"><br><br>
+            </p>
+            <p>
+                Which option best describes you? 
+                <select name="role" id="role">
+                    <option value="select" selected>-Select-</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Employee</option>
+                    <option value="visitor">Visitor</option>
+                </select>
+            </p>
+            <p>
+                Will you attend the party?
+                <label for="yes">
+                    <input type="radio" name="attending" id="yes" value="Yes">Yes</label>
+                <label for="no">
+                    <input type="radio" name="attending" id="no" value="No">No</label>
+            </p>
+            <p>
+                What did you like about the program? <br><br>
+                <label for="opt1">
+                    <input type="checkbox" id="opt1" name="likes about program" value="Training">Training</label><br><br>
+                <label for="opt2">
+                    <input type="checkbox" id="opt2" name="likes about program" value="The learning Sessions from Industry Experts">The learning Sessions from Industry Experts</label><br><br>
+                <label for="opt3">
+                    <input type="checkbox" id="opt3" name="likes about program" value="Community Meetups">Community Meetups</label><br><br>
+                <label for="opt4">
+                    <input type="checkbox" id="opt4" name="likes about program" value="Brown Bag Sessions">Brown Bag Sessions</label><br><br>
+                <label for="opt5">
+                    <input type="checkbox" id="opt5" name="likes about program" value="Switching to Hybrid Mode">Switching to Hybrid Mode</label><br><br>
+                <label for="opt6">
+                    <input type="checkbox" id="opt6" name="likes about program" value="">Food, Office etc.</label><br>
+            </p>
+            <p>
+                Any comments or suggestions: <br>
+                <textarea name="comments" id="comment" cols="50" rows="5"></textarea>
+            </p>
+            <p>
+                <button type="submit" id="submit" onclick="alert('Submitted Successfully....!!!')">Submit</button>
+                <button type="reset" id="reset">Reset</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

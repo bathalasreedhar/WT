@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    
+    <canvas id="myCanvas" width="500px" height="500px" style="border: 2px solid red;"></canvas>
+
+    <!-- <img src="/Instagram.png" width="227" height="227" alt="Insta" usemap="#myMap">
+
+    <map name="myMap">
+        <area shape="rect" coords="60,50,60,50" href="/index.html" alt="">
+        <area shape="circle" coords="50,50,20" href="/Experience.html" alt="">
+    </map> -->
+
+    <script>
+        var canva = document.getElementById("myCanvas");
+
+        var c = canva.getContext("2d");
+        c.beginPath();
+        c.moveTo(0,0);
+        c.lineTo(500,500);
+        c.stroke();
+        c.strokeStyle="blue";
+        c.beginPath();
+        c.moveTo(500, 0);
+        c.lineTo(0, 500);
+        c.strokeStyle = "blue";
+        c.stroke();
+        c.stroke();
+        c.beginPath();
+        c.arc(250,250,100,100,120);
+        c.strokeStyle="green";
+        c.stroke();
+    </script>
+
+</body>
+</html>

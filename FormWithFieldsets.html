@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with 3 Fieldsets</title>
+    <style>
+        html{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body{
+            color: whitesmoke;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstName" autofocus required><br><br>
+            </p>
+            <p>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastName"><br><br>
+            </p>
+            <p>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="E-Mail"><br><br>
+            </p>
+            <p>
+                <label for="rollno">Roll no:</label>
+                <input type="text" id="rollno" name="rollNo"><br><br>
+            </p>
+            <p>
+                Gender:
+                <label for="male">
+                <input type="radio" id="male" name="Gender" value="Male">Male</label>
+                <label for="female">
+                <input type="radio" id="female" name="Gender" value="Female">Female</label>
+            </p>
+            <p>
+                <label for="mobno">Mobile:</label>
+                <input type="text" id="mobno" name="countrycode" value="+91" size="3">
+                <input type="text" id="mobno" name="phone" size="10"><br><br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Academic Details</legend>
+            <p>
+                10th Details: <br><br>
+                <label for="school">School:</label>
+                <input type="text" id="school" name="School"><br><br>
+                <label for="cgpa10">CGPA:</label>
+                <input type="text" id="cgpa10" name="CGPA"><br><br>
+                <label for="passedOut10">Year Passed Out:</label>
+                <input type="text" id="passedOut10" name="10thPassedYear"><br><br>
+            </p>
+            <p>
+                12th Details: <br><br>
+                <label for="college1">College Name:</label>
+                <input type="text" id="college1" name="12th CollegeName"><br><br>
+                <label for="cgpa12">CGPA:</label>
+                <input type="text" id="cgpa12" name="CGPA"><br><br>
+                <label for="passedOut12">Year Passed Out:</label>
+                <input type="text" id="passedOut12" name="12thPassedYear"><br><br>
+            </p>
+            <p>
+                Under Graduation Details: <br><br>
+                <label for="college2">College Name:</label>
+                <input type="text" id="college2" name="UG CollegeName"><br><br>
+                <label for="cgpaUG">CGPA:</label>
+                <input type="text" id="cgpaUG" name="CGPA"><br><br>
+                <label for="passedOutUG">Year Passed Out:</label>
+                <input type="text" id="passedOutUG" name="UGPassedYear"><br><br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Skills and Others</legend>
+            <p>
+                <label for="skill">Skills:</label>
+                <select name="Skills" id="skill">
+                    <option value="select" selected>-Select-</option>
+                    <option value="fullstack">Full Stack</option>
+                    <option value="cloud computing">Cloud Computing</option>
+                    <option value="devops">Devops</option>
+                    <option value="artificial intelligence">Artificial Intelligence</option>
+                    <option value="machine learning">Machine Learning</option>
+                </select>
+            </p>
+            <p>
+                Experience
+                <input type="number" step="1" name="Experience">
+            </p>
+            <p>
+                <label for="hobby">Hobbies:</label><br>
+                <textarea name="hobbies" id="hobby" cols="50" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="interest">Interests:</label><br>
+                <textarea name="interests" id="interest" cols="50" rows="10"></textarea>
+            </p>
+        </fieldset>
+        <button type="submit" onclick="alert('Saved Successfully......!!!')">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Avinash Baratam">
+    <meta name="description" content="It is a login form">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color: #333;
+            color: whitesmoke;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        form{
+            text-align: center;
+        }
+        a{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Student Login Form</h1>
+    <form action="https://httpbin.org/get" method="get">
+        <label for="username">Username : </label>
+        <input type="text" id="username" name="username" placeholder="Enter Username" autofocus required><br><br>
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" required><br><br>
+        <button type="submit" onclick="alert('No database recognized...!!!')">Login</button>
+        <br>
+        <label for="rememberme"><input type="checkbox" value="Remember me" id="rememberme" name="remember me">Remember me</label>
+        <button type="reset">Cancel</button>
+        <p>Forgot <a href="forgotpassword.html">password?</a></p>
+    </form>
+</body>
+</html>

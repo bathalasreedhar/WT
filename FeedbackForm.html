@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body{
+            background-color: #333;
+            color: whitesmoke;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend><h1>Feedback Form</h1></legend>
+        <p>
+            <label for="fullname">Enter your FullName:</label>
+            <input type="text" id="fullname" name="FullName" autofocus required>
+        </p>
+        <p>
+            <label for="email">Your Email address:</label>
+            <input type="email" id="email" name="Email" required>
+        </p>
+        <p>
+            Is this the first time you have visited the website? <br><br>
+            <label for="visitYes">
+                <input type="radio" id="visitYes" name="visited" value="Yes" required>Yes</label><br><br>
+            <label for="visitNo">
+                <input type="radio" id="visitNo" name="visited" value="No" required>No</label><br><br>
+        </p>
+        <p>
+            What is the PRIMARY reason you came to the site? <br><br>
+            <textarea name="reason for visiting" id="visitreason" cols="70" rows="5"></textarea>
+        </p>
+        <p>
+            Do you find what you needed? <br><br>
+            <label for="cb1">
+                <input type="checkbox" id="cb1" name="find solution" value="Yes, all of it.">Yes, all of it.</label><br><br>
+            <label for="cb2">
+                <input type="checkbox" id="cb2" name="find solution" value="Yes, some of it.">Yes, some of it.</label><br><br>
+            <label for="cb3">
+                <input type="checkbox" id="cb3" name="find solution" value="No, none of it.">No, none of it.</label><br><br>
+        </p>
+        <p>
+            User Friendlyness (Rate out of 5) ? <br><br>
+            <input type="number" min="0" max="5" step="1" required>
+        </p>
+        <p>
+            <button type="submit" id="submit" onclick="alert('Submitted Successfully......!!!')">Submit Feedback</button>
+        </p>
+        </fieldset>
+    </form>
+</body>
+</html>
